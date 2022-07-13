@@ -1,0 +1,30 @@
+{
+  "name": "gds-functions",
+  "version": "0.1.0-SNAPSHOT",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build && func extensions install",
+    "start:host": "func start",
+    "start:debug": "func start --language-worker -- --inspect=5858"
+  },
+  "description": "",
+  "engines": {
+    "npm": ">=8.x",
+    "node": "16.x"
+  },
+  "enginesComments": {
+    "npm": "npm versions do use different package.lock formats. always use the same version to avoid merge conflicts",
+    "node": "node 16.x is required for azure functions"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.39",
+    "typescript": "4.7.3"
+  },
+  "dependencies": {
+    "@azure/functions": "3.0.0",
+    "cron-parser": "^4.5.0",
+    "dayjs": "1.11.3",
+    "durable-functions": "2.0.2"
+  }
+}

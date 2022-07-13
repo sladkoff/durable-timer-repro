@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "context",
+      "orchestration": "orchestrator-prototype",
+      "type": "orchestrationTrigger",
+      "direction": "in"
+    }
+  ],
+  "scriptFile": "../dist/function-orchestrator-prototype/OrchestratorPrototype.js"
+}

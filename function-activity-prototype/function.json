@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "context",
+      "activity": "activity-prototype",
+      "type": "activityTrigger",
+      "direction": "in"
+    }
+  ],
+  "scriptFile": "../dist/function-activity-prototype/ActivityPrototype.js"
+}
